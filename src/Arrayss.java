@@ -9,6 +9,12 @@ public class Arrayss {
             System.out.println("index["+i+"]"+"="+a[i]);
     }
 
+    public void R_Travesal(int[]a) {
+
+        for(int i=a.length-1 ; i>=0 ; i--)
+            System.out.println("index["+i+"]"+"="+a[i]);
+    }
+
 
     public void Travesal2(int[]a) {
         for(int e :a)
@@ -36,4 +42,18 @@ public class Arrayss {
     }
 
 
+    public void shiftLeft_Delete(int[]a,int index){
+        for (int i=index;i<a.length-1;i++) {
+            a[i] = a[i + 1];
+        }
+        a[a.length-1]=Integer.MIN_VALUE;
+    }
+
+
+    public int LinearSearch(int[]a,int svalue){
+        for (int i=0; i<a.length ;i++)
+            if(a[i]==svalue)
+                return i;
+        return -1;
+    }
 }
