@@ -19,6 +19,6 @@ public class Main {
           //arr.update(numbers,3,9);
         //arr.shiftLeft_Delete (numbers ,2);
 
-        //arr.Travesal(numbers);
+       arr.Travesal(numbers);
     }
 }

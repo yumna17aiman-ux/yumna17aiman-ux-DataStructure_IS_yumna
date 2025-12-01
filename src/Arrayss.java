@@ -50,9 +50,9 @@ public class Arrayss {
     }
 
 
-    public int LinearSearch(int[]a,int svalue){
+    public int LinearSearch(int[]a,int ssvalue){
         for (int i=0; i<a.length ;i++)
-            if(a[i]==svalue)
+            if(a[i]==ssvalue)
                 return i;
         return -1;
     }
