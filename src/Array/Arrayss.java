@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.Scanner;
 
 public class Arrayss {
@@ -50,10 +52,25 @@ public class Arrayss {
     }
 
 
-    public int LinearSearch(int[]a,int ssvalue){
+    public int LinearSearch(int[]a,int svalue){
         for (int i=0; i<a.length ;i++)
-            if(a[i]==ssvalue)
+            if(a[i]==svalue)
                 return i;
         return -1;
     }
+
+    public int binarySearch(int[]a, int svalue) {
+    int findex=0;
+    int lindex=a.length-1;
+while (findex<=lindex){
+        int mid=(findex+lindex) /2;//5
+        if(svalue==a[mid])
+            return mid;
+        if(svalue>a [mid])
+            findex=mid+1;
+        if (svalue<a[mid])
+            Lindex=mid-1:
+    }
+return -1;
+}
 }
