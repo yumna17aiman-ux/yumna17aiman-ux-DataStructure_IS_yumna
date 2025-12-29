@@ -1,42 +1,18 @@
 package SinglyLinkedList;
 
 public class main {
+    public static void main(String[] args) {
+        SinglyLinkedList<Integer> list=new SinglyLinkedList<Integer>();
+        SinglyLinkedList<String> list2=new SinglyLinkedList<String>();
+        list.addFirst(10);
+        list.addFirst(20);
+        list.addLast(40);
+        list.addFirst(30);
+        list.removeFirst();
+        list.removeLast();
+        list.display();
 
-    public class SinglyLinkedList<E> {
-        private Node<E> head=null;
-         private Node<E> tail=null;
-         private int size=0;
 
- public int size (){ return size; }
-    public boolean isEmpty() {
-    return size()==0;}
-}
-class Node<E> {
-        private E data;
-        private Node<E> next;
-
-    public Node<E> getNext() {
-        return next;
-    }
-
-    public void setNext(Node<E> next) {
-        this.next = next;
-    }
-
-    public E getData() {
-        return data;
-    }
-
-    public void setData(E data) {
-        this.data = data;
-    }
-
-    class Node<E>{
 
     }
-
-
-
-
-
 }
