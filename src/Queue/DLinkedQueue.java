@@ -1,9 +1,10 @@
 package Queue;
 
+import DoublyLinkedList.DoublyLinkedList;
 import SinglyLinkedList.SinglyLinkedList;
 
-public class LinkedQueue<E>  implements  Queue<E> {
-    SinglyLinkedList<E> slist=new SinglyLinkedList<E>();
+public class DLinkedQueue<E>  implements  Queue<E> {
+    DoublyLinkedList<E> slist=new DoublyLinkedList<E>();
 
     @Override
     public boolean isEmpty() {
